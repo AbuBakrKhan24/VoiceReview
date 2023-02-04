@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    box-sizing: 0;
+}
+h1 {
+    font-size: 20px;
+}
+
+.box {
+    background-color: rgb(227, 230, 230);
+    width: 550px;
+    height: 275px;
+    padding: 50px;
+}
+
+.holder {
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.faces {
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    font-size: 80px;
+    color: #f7c64b;
+}
+
+
+.face {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+i:hover{
+    color: blanchedalmond;
+}
+
+i:active{
+    color: #f7c64b;
+}

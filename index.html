@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styels.css" />
+    <title>ReviewTest</title>
+  </head>
+  <body>
+    <audio id="sadAudio">
+      <source src="./auds/sad.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="smileAudio">
+      <source src="./auds/smile.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="happyAudio">
+      <source src="./auds/happy.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="holder">
+      <div class="box">
+        <h1>RATE US!!!</h1>
+        <div class="faces">
+          <div class="face sad"><i onclick="playAudio1()" type="button" class="fa-solid fa-face-meh"></i></i></div>
+          <div class="face smile"><i onclick="playAudio2()" type="button" class="fa-solid fa-face-smile"></i></div>
+          <div class="face happy">
+            <i onclick="playAudio3()" type="button" class="fa-solid fa-face-grin-stars"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/edecc44186.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var x = document.getElementById("sadAudio"); 
+
+function playAudio1() { 
+  x.play(); 
+} 
+      var y = document.getElementById("smileAudio"); 
+
+function playAudio2() { 
+  y.play(); 
+} 
+      var z = document.getElementById("happyAudio"); 
+
+function playAudio3() { 
+  z.play(); 
+  
+} 
+    </script>
+  </body>
+</html>
